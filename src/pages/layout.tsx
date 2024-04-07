@@ -13,6 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
+        width: "100%",
       }}
     >
       <Grid
