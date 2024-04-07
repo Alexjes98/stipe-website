@@ -4,6 +4,7 @@ import OurTeam from "../pages/ourTeam";
 import Study from "../pages/study";
 import About from "../pages/about";
 import PrivacyPolicy from "../pages/privacyPolicy";
+import DeleteData from "../pages/deleteData";
 
 const appRoutes = [
     {
@@ -29,6 +30,10 @@ const appRoutes = [
     {
         path: "/contact",
         element: <div></div>,
+    },
+    {
+        path: "/deleteData",
+        element: <DeleteData />
     },
     {
         path: "/privacyPolicy",
