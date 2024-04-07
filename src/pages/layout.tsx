@@ -16,14 +16,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         width: "100%",
       }}
     >
-      <Grid
-        container
-      >
+      <Grid container>
         <Grid
           item
           xs={6}
           sx={{
-            backgroundColor: theme.palette.primary.main,    
+            backgroundColor: theme.palette.primary.main,
             display: "flex",
             justifyContent: "start",
             alignItems: "center",
@@ -37,7 +35,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           item
           xs={6}
           sx={{
-            backgroundColor: theme.palette.primary.main,    
+            backgroundColor: theme.palette.primary.main,
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "center",
@@ -45,10 +43,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             paddingBottom: "10px",
           }}
         >
-          <Box sx={{ display: "flex", flexDirection: "row",
-          justifyContent: "space-between", width: "100%"
-          
-         }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+          >
             <Link
               href="/"
               sx={{
@@ -92,10 +94,51 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </Box>
         </Grid>
       </Grid>
+      <Box id="content">{children}</Box>
       <Box
-        id="content"
+        sx={{
+          backgroundColor: theme.palette.primary.dark,
+        }}
+        id="footer"
       >
-        {children}
+        <Grid
+          container
+          sx={{
+            padding: "30px",
+          }}
+        >
+          <Grid item xs={4}>
+            <Link
+              href="/privacyPolicy"
+              sx={{
+                textDecoration: "none",
+                color: "white"
+              }}
+            >
+              <Typography>Política de privacidad</Typography>
+            </Link>
+            <Link
+              href="/privacyPolicy"
+              sx={{
+                textDecoration: "none",
+                color: "white"
+              }}
+            >
+              <Typography>Terminos y condiciones</Typography>
+            </Link>
+          </Grid>
+          <Grid item xs={4}>
+          <Typography>Contacto: stipeorg@gmail.com</Typography>
+          </Grid>
+          <Grid item xs={4}
+          sx={{
+            alignContent: "center",
+            justifyItems: "end"
+          }}
+          >
+          <img src={Logo} alt="Logo" style={{ width: "100px" }} />
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );
