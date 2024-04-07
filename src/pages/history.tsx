@@ -1,6 +1,9 @@
-import { Box, Button, Grid, Typography, Container } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
+
 import Hands from "../assets/jpg/hands.jpg";
 import HomeBackground from "../assets/jpg/home.jpg";
+import Worker from "../assets/png/3.png";
+import TableImg from "../assets/png/table.png";
 
 import { useTheme } from "@mui/material/styles";
 
@@ -19,8 +22,10 @@ const History = () => {
       </Box>
       <Grid
         container
+        spacing={4}
         sx={{
-          padding: "70px 10px ",
+          padding: "70px 50px ",
+          alignItems: "center",
         }}
       >
         <Grid item xs={7}>
@@ -36,8 +41,8 @@ const History = () => {
                 border: "10px solid",
                 borderColor: theme.palette.primary.main,
                 borderRadius: "500px",
-                height: "600px",
-                width: "600px",
+                height: "500px",
+                width: "500px",
               }}
             >
               <img src={Hands} alt="fondo" width="100%" height="100%" />
@@ -49,7 +54,7 @@ const History = () => {
                 position: "absolute",
                 color: "white",
                 top: "80%",
-                left: "70%",
+                left: "50%",
               }}
             >
               Historia
@@ -78,7 +83,12 @@ const History = () => {
         >
           <Typography
             variant="h6"
-            sx={{ fontWeight: "bold", color: "white", marginTop: "10vh" }}
+            sx={{
+              fontWeight: "bold",
+              color: "white",
+              marginTop: "10vh",
+              justifyContent: "center",
+            }}
           >
             La cosecha de los racimos maduros en la Palma Aceitera (Elaeis
             guineensis), genera montos en uso de recursos y costos en el orden
@@ -86,27 +96,71 @@ const History = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container>
-        <Grid item xs={6}>
-          <p>
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          padding: "70px 50px ",
+          alignItems: "center",
+          marginTop: "10vh",
+        }}
+      >
+        <Grid item xs={9}>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "bold",
+              marginTop: "5vh",
+              color: theme.palette.primary.main,
+              textAlign: "justify",
+            }}
+          >
             Se denota, por tanto, la falta de mediciones a través de indicadores
             que informen sobre el desempeño de las labores de siembra y cosecha
             del rubro en cuestión, reafirmando la importancia que posee el
             recurso humano en los resultados.
-          </p>
+          </Typography>
+        </Grid>
+        <Grid item xs={3}>
+          <img src={Worker} alt="worker" width="100%" />
+        </Grid>
+        <Grid
+          item
+          xs={6}
+          sx={{
+            justifyContent: "start",
+            alignItems: "center",
+            display: "flex",
+          }}
+        >
+          <img src={TableImg} alt="table" width="90%" />
         </Grid>
         <Grid item xs={6}>
-        </Grid>
-      <Grid item>
-          <p>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "bold",
+              textAlign: "justify",
+              color: theme.palette.primary.main,
+            }}
+          >
             Un equipo de ingenieros industriales se dedicó a investigar en una
             empresa del sector cómo obtener información de rendimientos y
             balance de recursos con modelos que tomaran en cuenta múltiples
             variables a considerar. A partir de allí se inició la recolección de
             data y realización de un estudio de movimientos en el año 2014 que
             ha continuado hasta la actualidad.
-          </p>
-          <p>
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "bold",
+              marginTop: "5vh",
+              color: theme.palette.primary.main,
+            }}
+          >
             El estudio iniciado en Guatemala, tuvo como objetivo general aplicar
             a profundidad los enfoques históricos de la Ingeniería Industrial
             (movimientos, tiempos, ergonomía, matemáticas y análisis
@@ -118,7 +172,7 @@ const History = () => {
             obra directa, proporcionando a su vez balances de recursos
             utilizados en las labores y así garantizar la rentabilidad de los
             procesos.
-          </p>
+          </Typography>
         </Grid>
       </Grid>
     </>

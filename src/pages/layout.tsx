@@ -12,24 +12,22 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       id="layout"
       sx={{
         display: "flex",
-        flexDirection: "column",        
+        flexDirection: "column",
       }}
     >
       <Grid
         container
-        sx={{
-          backgroundColor: theme.palette.primary.main,          
-          padding: "0 10%",
-          height: "13vh",
-        }}
       >
         <Grid
           item
           xs={6}
           sx={{
+            backgroundColor: theme.palette.primary.main,    
             display: "flex",
             justifyContent: "start",
             alignItems: "center",
+            paddingLeft: "50px",
+            paddingBottom: "10px",
           }}
         >
           <img src={Logo} alt="Logo" style={{ width: "100px" }} />
@@ -38,9 +36,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           item
           xs={6}
           sx={{
+            backgroundColor: theme.palette.primary.main,    
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "center",
+            paddingRight: "50px",
+            paddingBottom: "10px",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "row",
