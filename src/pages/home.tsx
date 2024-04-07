@@ -1,9 +1,10 @@
-import { Box, Button, Grid, Typography, Container } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 
 import HomeBackground from "../assets/jpg/home.jpg";
 import Phone from "../assets/png/presentación-celular-1.png";
-
+import { useTheme } from "@mui/material/styles";
 const Home = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -21,10 +22,7 @@ const Home = () => {
       </Box>
       <Box
         sx={{
-          width: "100%",
-          paddingTop: "30vh",
-          paddingLeft: "10vw",
-          marginBottom: "60vh",
+          
         }}
       >
         <Grid container>
@@ -51,21 +49,39 @@ const Home = () => {
           >
             <Button
               variant="contained"
-              sx={{
-                marginTop: "10vh",
-                width: "40%",
-                fontWeight: "bold",
-              }}
+              
             >
               Iniciar
             </Button>
           </Grid>
         </Grid>
       </Box>
-      <Box>
-        <Box>
-          <img src={Phone} alt="" width="100%" />
-        </Box>
+      <Box
+       
+      >
+        <Grid container>
+          <Grid item xs={6}>
+            <Typography
+              variant="h4"
+              sx={{ fontWeight: "bold", color: "black", marginTop: "10vh" }}
+            >
+              ¿Qué es Stipe?
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{ fontWeight: "bold", color: theme.palette.primary.main }}
+            >
+              Stipe es una aplicación que permite a los agricultores de palma
+              aceitera llevar un control de sus cultivos de manera eficiente y
+              efectiva.
+            </Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Box>
+              <img src={Phone} alt="" width="100%" />
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );

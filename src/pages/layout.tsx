@@ -1,62 +1,100 @@
 import React from "react";
-import { Box, Typography, Link } from "@mui/material";
+import { Box, Typography, Link, Grid } from "@mui/material";
 
 import { useTheme } from "@mui/material/styles";
 
 import Logo from "../assets/png/logo-stipe-blaco.png";
 
-
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const theme = useTheme();
   return (
-    <Box id="layout" sx={{ flexDirection: "row" }}>
-      <Box
+    <Box
+      id="layout"
+      sx={{
+        display: "flex",
+        flexDirection: "column",        
+      }}
+    >
+      <Grid
+        container
         sx={{
-          zIndex: 2,
-          position: "absolute",
-          marginTop: 10,
-          top: 0,
-          width: "80%",
-          padding: "15px 5% 5px 15%",
-          justifyContent: "space-between",
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "row",
-          backgroundColor: theme.palette.primary.main,
+          backgroundColor: theme.palette.primary.main,          
+          padding: "0 10%",
+          height: "13vh",
         }}
       >
-        <img src={Logo} alt="Logo" style={{ width: "100px" }} />
-        <Box
+        <Grid
+          item
+          xs={6}
           sx={{
             display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            width: "50%",
+            justifyContent: "start",
+            alignItems: "center",
           }}
         >
-          <Link>
-            <Typography variant="h6" sx={{ color: "white" }}>
-              Home
-            </Typography>
-          </Link>
-          <Link>
-            <Typography variant="h6" sx={{ color: "white" }}>
-              Historia
-            </Typography>
-          </Link>
-          <Link>
-            <Typography variant="h6" sx={{ color: "white" }}>
-              Nosotros
-            </Typography>
-          </Link>
-          <Link>
-            <Typography variant="h6" sx={{ color: "white" }}>
-              Estudio
-            </Typography>
-          </Link>
-        </Box>
+          <img src={Logo} alt="Logo" style={{ width: "100px" }} />
+        </Grid>
+        <Grid
+          item
+          xs={6}
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row",
+          justifyContent: "space-between", width: "100%"
+          
+         }}>
+            <Link
+              href="/"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "white" }}>
+                Home
+              </Typography>
+            </Link>
+            <Link
+              href="/history"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "white" }}>
+                Historia
+              </Typography>
+            </Link>
+            <Link
+              href="/ourTeam"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "white" }}>
+                Nosotros
+              </Typography>
+            </Link>
+            <Link
+              href="/study"
+              sx={{
+                textDecoration: "none",
+              }}
+            >
+              <Typography variant="h6" sx={{ color: "white" }}>
+                Estudio
+              </Typography>
+            </Link>
+          </Box>
+        </Grid>
+      </Grid>
+      <Box
+        id="content"
+      >
+        {children}
       </Box>
-      <Box>{children}</Box>
     </Box>
   );
 };
