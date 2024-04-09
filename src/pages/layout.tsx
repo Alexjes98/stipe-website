@@ -118,7 +118,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Typography>Política de privacidad</Typography>
             </Link>
             <Link
-              href="/privacyPolicy"
+              href="/termsAndConditions"
               sx={{
                 textDecoration: "none",
                 color: "white"

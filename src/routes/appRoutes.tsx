@@ -5,6 +5,7 @@ import Study from "../pages/study";
 import About from "../pages/about";
 import PrivacyPolicy from "../pages/privacyPolicy";
 import DeleteData from "../pages/deleteData";
+import TermsAndConditions from "../pages/termsAndConditions";
 
 const appRoutes = [
     {
@@ -38,6 +39,10 @@ const appRoutes = [
     {
         path: "/privacyPolicy",
         element: <PrivacyPolicy/>,
+    },
+    {
+        path: "/termsAndConditions",
+        element: <TermsAndConditions />
     }
 ];
 
