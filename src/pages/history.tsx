@@ -159,6 +159,7 @@ const History = () => {
               fontWeight: "bold",
               marginTop: "5vh",
               color: theme.palette.primary.main,
+              textAlign: "justify",
             }}
           >
             El estudio iniciado en Guatemala, tuvo como objetivo general aplicar

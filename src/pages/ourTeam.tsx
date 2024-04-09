@@ -41,8 +41,9 @@ const OurTeam = () => {
               sx={{
                 fontWeight: "bold",
                 position: "absolute",
+
                 color: "white",
-                top: "60%",
+                top: "50%",
                 left: "70%",
               }}
             >
@@ -54,7 +55,7 @@ const OurTeam = () => {
                 fontWeight: "bold",
                 position: "absolute",
                 color: "white",
-                top: "75%",
+                top: "65%",
                 left: "85%",
               }}
             >
@@ -69,6 +70,7 @@ const OurTeam = () => {
               fontWeight: "bold",
               color: "white",
               marginTop: "10vh",
+              textAlign: "justify",
               justifyContent: "center",
             }}
           >
@@ -84,6 +86,7 @@ const OurTeam = () => {
             sx={{
               fontWeight: "bold",
               color: "white",
+              textAlign: "justify",
               marginTop: "10vh",
               justifyContent: "center",
             }}

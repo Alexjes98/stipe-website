@@ -31,6 +31,7 @@ const Study = () => {
             sx={{
               fontWeight: "bold",
               textAlign: "start",
+              
             }}
           >
             Estudios de Tiempos y Movimientos
@@ -46,7 +47,7 @@ const Study = () => {
             variant="body1"
             sx={{
               fontWeight: "bold",
-              textAlign: "start",
+              textAlign: "justify",
             }}
           >
             Luego de comenzar la producción de fruta madura, en el año 2014, una
@@ -69,7 +70,7 @@ const Study = () => {
             variant="body1"
             sx={{
               fontWeight: "bold",
-              textAlign: "start",
+              textAlign: "justify",
             }}
           >
             Se obtendrían entonces las expresiones matemáticas y la metodología
@@ -100,7 +101,7 @@ const Study = () => {
             variant="body1"
             sx={{
               fontWeight: "bold",
-              textAlign: "start",
+              textAlign: "justify",
               color: theme.palette.primary.main,
             }}
           >
@@ -118,7 +119,7 @@ const Study = () => {
             variant="body1"
             sx={{
               fontWeight: "bold",
-              textAlign: "start",
+              textAlign: "justify",
               color: theme.palette.primary.main,
             }}
           >
@@ -144,7 +145,7 @@ const Study = () => {
             variant="h6"
             sx={{
               fontWeight: "bold",
-              textAlign: "start",
+              textAlign: "justify",
               color: theme.palette.primary.main,
             }}
           >

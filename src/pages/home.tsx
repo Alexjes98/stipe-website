@@ -20,16 +20,18 @@ const Home = () => {
       >
         <img src={HomeBackground} alt="fondo" width="100%" />
       </Box>
-      <Box
-        sx={{
-          
-        }}
-      >
+      <Box sx={{}}>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid
+            item
+            xs={6}
+            sx={{
+              padding: "300px 50px ",
+            }}
+          >
             <Typography
               variant="h1"
-              sx={{ fontWeight: "bold", color: "white", marginTop: "10vh" }}
+              sx={{ fontWeight: "bold", color: "white" }}
             >
               Stipe
             </Typography>
@@ -45,22 +47,30 @@ const Home = () => {
               justifyContent: "center",
               alignItems: "center",
               display: "flex",
+              padding: "300px 100px ",
             }}
           >
             <Button
+              sx={{
+                backgroundColor: theme.palette.primary.light,
+              }}
+              fullWidth
               variant="contained"
-              
             >
               Iniciar
             </Button>
           </Grid>
         </Grid>
       </Box>
-      <Box
-       
-      >
+      <Box>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid
+            item
+            xs={6}
+            sx={{
+              padding: "30px 50px ",
+            }}
+          >
             <Typography
               variant="h4"
               sx={{ fontWeight: "bold", color: "black", marginTop: "10vh" }}

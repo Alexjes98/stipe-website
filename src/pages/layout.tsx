@@ -127,10 +127,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Typography>Terminos y condiciones</Typography>
             </Link>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
           <Typography>Contacto: stipeorg@gmail.com</Typography>
+          <Typography>Descargar archivo Excel</Typography>
           </Grid>
-          <Grid item xs={4}
+          <Grid item xs={2}
           sx={{
             alignContent: "center",
             justifyItems: "end"
