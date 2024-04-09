@@ -4,6 +4,7 @@ import { Box, Typography, Link, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 import Logo from "../assets/png/logo-stipe-blaco.png";
+//TODO: Add the downloable file
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const theme = useTheme();
@@ -129,7 +130,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </Grid>
           <Grid item xs={6}>
           <Typography>Contacto: stipeorg@gmail.com</Typography>
-          <Typography>Descargar archivo Excel</Typography>
+          <Typography>Descargar archivo Excel</Typography>          
           </Grid>
           <Grid item xs={2}
           sx={{

@@ -57,6 +57,7 @@ const DeleteData = () => {
             justifyContent: "center",
             display: "flex",
             paddingX: "40px",
+            marginBottom: "380px"
           }}
         >
           <Button
