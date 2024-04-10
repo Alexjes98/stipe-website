@@ -113,7 +113,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               href="/privacyPolicy"
               sx={{
                 textDecoration: "none",
-                color: "white"
+                color: "white",
               }}
             >
               <Typography>Política de privacidad</Typography>
@@ -122,23 +122,34 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               href="/termsAndConditions"
               sx={{
                 textDecoration: "none",
-                color: "white"
+                color: "white",
               }}
             >
               <Typography>Terminos y condiciones</Typography>
             </Link>
           </Grid>
           <Grid item xs={6}>
-          <Typography>Contacto: stipeorg@gmail.com</Typography>
-          <Typography>Descargar archivo Excel</Typography>          
+            <Typography>Contacto: stipeorg@gmail.com</Typography>
+            <Typography>Descargar archivo Excel</Typography>
+            <Link
+              href="/deleteData"
+              sx={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              <Typography>Solicitud de eliminación de datos</Typography>
+            </Link>
           </Grid>
-          <Grid item xs={2}
-          sx={{
-            alignContent: "center",
-            justifyItems: "end"
-          }}
+          <Grid
+            item
+            xs={2}
+            sx={{
+              alignContent: "center",
+              justifyItems: "end",
+            }}
           >
-          <img src={Logo} alt="Logo" style={{ width: "100px" }} />
+            <img src={Logo} alt="Logo" style={{ width: "100px" }} />
           </Grid>
         </Grid>
       </Box>
