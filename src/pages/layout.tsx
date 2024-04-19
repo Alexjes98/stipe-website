@@ -63,7 +63,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </Typography>
             </Link>
             <Link
-              href="/history"
+              href="/#/history"
               sx={{
                 textDecoration: "none",
               }}
@@ -73,7 +73,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </Typography>
             </Link>
             <Link
-              href="/ourTeam"
+              href="/#/ourTeam"
               sx={{
                 textDecoration: "none",
               }}
@@ -83,7 +83,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </Typography>
             </Link>
             <Link
-              href="/study"
+              href="/#/study"
               sx={{
                 textDecoration: "none",
               }}
@@ -110,7 +110,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           <Grid item xs={4}>
             <Link
-              href="/privacyPolicy"
+              href="/#/privacyPolicy"
               sx={{
                 textDecoration: "none",
                 color: "white",
@@ -119,7 +119,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Typography>Política de privacidad</Typography>
             </Link>
             <Link
-              href="/termsAndConditions"
+              href="/#/termsAndConditions"
               sx={{
                 textDecoration: "none",
                 color: "white",

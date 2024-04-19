@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import appRoutes from "./routes/appRoutes.tsx";
 import Layout from "./pages/layout.tsx";
 
 function App() {
-  let router = createBrowserRouter(appRoutes);
+  let router = createHashRouter(appRoutes);
   return (
     <Layout>
       <RouterProvider router={router} />
