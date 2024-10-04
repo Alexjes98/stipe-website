@@ -6,6 +6,7 @@ import About from "../pages/about";
 import PrivacyPolicy from "../pages/privacyPolicy";
 import DeleteData from "../pages/deleteData";
 import TermsAndConditions from "../pages/termsAndConditions";
+import ResetPassword from "../pages/resetPastword";
 
 const appRoutes = [
     {
@@ -43,6 +44,10 @@ const appRoutes = [
     {
         path: "/termsAndConditions",
         element: <TermsAndConditions />
+    },
+    {
+        path: "/resetPassword",
+        element: <ResetPassword />
     }
 ];
 
