@@ -130,9 +130,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </Grid>
           <Grid item xs={6}>
             <Typography>Contacto: stipeorg@gmail.com</Typography>
-            <Typography>Descargar archivo Excel</Typography>
             <Link
-              href="/deleteData"
+              href="/#/downloadExcelTemplate"
+              sx={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              <Typography>Descargar archivo Excel</Typography>
+            </Link>
+            <Link
+              href="/#/deleteData"
               sx={{
                 textDecoration: "none",
                 color: "white",
