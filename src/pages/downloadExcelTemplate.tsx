@@ -1,18 +1,31 @@
 import { Box, Grid, Button, Typography } from "@mui/material";
 
 import { useTheme } from "@mui/material/styles";
-const handleDownload = () => {
+const handleDownload = async ()  => {
   // URL of the file to be downloaded
   const fileUrl = `public/template.xlsx`;
   const fileName = "template.xlsx";
 
-  // Create an anchor element and trigger the download
-  const link = document.createElement("a");
-  link.href = fileUrl;
-  link.download = fileName;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  try {
+    // Fetch the file
+    const response = await fetch(fileUrl);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    // Convert the response to a Blob
+    const blob = await response.blob();
+
+    // Create a download link from the Blob
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch (error) {
+    console.error('Error downloading the file:', error);
+  }
 };
 
 const DownloadExcelTemplate = () => {
