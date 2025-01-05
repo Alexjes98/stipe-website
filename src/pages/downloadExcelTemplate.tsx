@@ -3,7 +3,7 @@ import { Box, Grid, Button, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 const handleDownload = async ()  => {
   // URL of the file to be downloaded
-  const fileUrl = `public/template.xlsx`;
+  const fileUrl = `${import.meta.env.VITE_TEMPLATE_BUCKET_URL}/template.xlsx`;
   const fileName = "template.xlsx";
 
   try {
